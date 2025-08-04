@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Code Analysis - SonarQube') {
             steps {
-                withSonarQubeEnv('SonarQube') {
+                withSonarQubeEnv('sonarqube') {
                     // Thêm sonar.projectKey để xác định dự án trong SonarQube
                     bat 'mvn -f be-fintrack-master/pom.xml clean verify sonar:sonar -DskipTests -Dsonar.token=squ_dcd86e3c448e482c0f0c5a42673e709aced3aa00'
                 }
