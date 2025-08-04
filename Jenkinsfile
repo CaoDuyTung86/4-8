@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/kietgamer09/trienkhaiphanmem.git', credentialsId: '8d2fff40-4c3e-406c-bcfd-5232f3b6b4b8'
+                git branch: 'main', url: 'https://github.com/CaoDuyTung86/4-8.git', credentialsId: '8a60576f-c20d-45a6-b39d-07308d97dc47'
             }
         }
         stage('Reset Build Status') {
