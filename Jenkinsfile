@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven-3.9.11' // Sử dụng Maven đã cài thủ công
+        maven 'maven' // Sử dụng Maven đã cài thủ công
     }
     environment {
         IMAGE_TAG = "latest"
