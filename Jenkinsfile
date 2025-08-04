@@ -6,7 +6,7 @@ pipeline {
     environment {
         IMAGE_TAG = "latest"
         SONAR_HOST_URL = "http://localhost:9000" // Thay bằng URL SonarQube của bạn
-        SONAR_LOGIN = credentials('sonar-token') // ID token SonarQube trong Jenkins
+        SONAR_LOGIN = credentials('f35d16a8-7970-4cc9-8845-0bbb174c16cc') // ID token SonarQube trong Jenkins
     }
     stages {
         stage('Checkout') {
